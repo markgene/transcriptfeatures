@@ -5,7 +5,7 @@ import unittest
 from transcriptfeatures.models.genomicpositions.sp0based import Sp0Based
 
 
-class SpTestCase(unittest.TestCase):
+class Sp0BasedTestCase(unittest.TestCase):
     """Test Sp0Based class."""
 
     def test_init_succeed(self):
