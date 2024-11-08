@@ -24,6 +24,28 @@
             "module": "unittest"
         },
         {
+            "name": "tests.annotators",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover",
+                // "-v",
+                "tests.annotators"
+            ],
+        },
+        {
+            "name": "tests.annotators.positionannotators",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover",
+                // "-v",
+                "tests.annotators.positionannotators"
+            ],
+        },
+        {
             "name": "tests.models",
             "type": "debugpy",
             "request": "launch",
