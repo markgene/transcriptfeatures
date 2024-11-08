@@ -53,6 +53,28 @@
             "args": [
                 "tests.models.genomicpositions.test_sp"
             ],
+        },
+        {
+            "name": "tests.transcriptfeaturescreators",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover",
+                // "-v",
+                "tests.transcriptfeaturescreators"
+            ],
+        },
+        {
+            "name": "tests.transcriptfeaturescreators.txexonfetcher",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover",
+                // "-v",
+                "tests.transcriptfeaturescreators.txexonfetcher"
+            ],
         }
     ]
 }

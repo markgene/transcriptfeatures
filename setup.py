@@ -21,6 +21,7 @@ setup(
     ],
     python_requires='>=3.6',          # Minimum Python version
     install_requires=[                # List of dependencies
-        'pyoncokb',                   # Add your dependencies here
+        'dacite',                   # Add your dependencies here
+        'hdp',
     ],
 )
