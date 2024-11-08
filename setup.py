@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='transcriptfeatures',               # The name of your package
     version='0.0.1',                 # Initial version
-    description='Transcript features',
+    description='Transcript features, genomic positions, genomic ranges.',
     long_description=open('README.md').read(),  # Long description from README
     long_description_content_type='text/markdown',
     author='Mark J Chen',

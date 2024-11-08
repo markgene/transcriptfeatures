@@ -2,6 +2,9 @@
 
 from dataclasses import dataclass
 
+from .sp0based import Sp0Based
+from .sp1based import Sp1Based
+
 
 @dataclass
 class GenomicRange:
@@ -34,3 +37,39 @@ class GenomicRange:
 
     def __str__(self) -> str:
         return f"{self.name}: {self.ac}:{self.start}-{self.end}"
+
+    def contains_position(self, pos: int) -> bool:
+        """Does the range contain the position?"""
+        pass
+
+    def contains_sp0_based(self, sp0_based: Sp0Based) -> bool:
+        """Does the range contain the position?
+        
+        Check sequence accession first.
+
+        Args:
+            sp0_based (Sp0Based): a position.
+
+        Returns:
+            bool
+        """
+        if sp0_based.ac == self.ac:
+            return self.contains_position(sp0_based.pos + 1)
+        else:
+            return False
+
+    def contains_sp1_based(self, sp1_based: Sp1Based) -> bool:
+        """Does the range contain the position?
+        
+        Check sequence accession first.
+
+        Args:
+            sp1_based (Sp0Based): a position.
+
+        Returns:
+            bool
+        """
+        if sp1_based.ac == self.ac:
+            return self.contains_position(sp1_based.pos)
+        else:
+            return False
