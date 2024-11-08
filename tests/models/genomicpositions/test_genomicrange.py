@@ -9,8 +9,8 @@ class GenomicRangeTestCase(unittest.TestCase):
     """Test GenomicRange class."""
 
     def test_init_succeed(self):
-        sp = GenomicRange(ac="AC", start=0, end=0, name="NAME")
-        self.assertTrue(isinstance(sp, GenomicRange))
+        gr = GenomicRange(ac="AC", start=0, end=0, name="NAME")
+        self.assertTrue(isinstance(gr, GenomicRange))
 
     def test_init_negative_start(self):
         with self.assertRaises(Exception) as context:
