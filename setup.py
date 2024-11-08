@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='transcriptfeatures',               # The name of your package
     version='0.0.1',                 # Initial version
-    description='Transcript features, genomic positions, genomic ranges.',
+    description='Genomic features for transcripts',
     long_description=open('README.md').read(),  # Long description from README
     long_description_content_type='text/markdown',
     author='Mark J Chen',
@@ -22,6 +22,6 @@ setup(
     python_requires='>=3.6',          # Minimum Python version
     install_requires=[                # List of dependencies
         'dacite',                   # Add your dependencies here
-        'hdp',
+        'hgvs',
     ],
 )
