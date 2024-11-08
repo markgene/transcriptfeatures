@@ -1,4 +1,4 @@
-"""Test TxExonFetcher class."""
+"""Test TxExonFetcher class with ERBB2 NM004448.2."""
 
 import unittest
 
@@ -8,8 +8,8 @@ from transcriptfeatures.transcriptfeaturescreators.txexon import TxExon
 from transcriptfeatures.transcriptfeaturescreators.txexonfetcher import TxExonFetcher
 
 
-class TxExonFetcherTestCase(unittest.TestCase):
-    """Test TxExonFetcher class."""
+class TxExonFetcherErbb2Nm004448_2TestCase(unittest.TestCase):
+    """Test TxExonFetcher class with ERBB2 NM004448.2."""
 
     @classmethod
     def setUpClass(cls):

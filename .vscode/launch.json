@@ -66,6 +66,17 @@
             ],
         },
         {
+            "name": "tests.transcriptfeaturescreators.transcriptfeaturescreator",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover",
+                // "-v",
+                "tests.transcriptfeaturescreators.transcriptfeaturescreator"
+            ],
+        },
+        {
             "name": "tests.transcriptfeaturescreators.txexonfetcher",
             "type": "debugpy",
             "request": "launch",
