@@ -46,6 +46,17 @@
             ],
         },
         {
+            "name": "tests.annotators.rangeannotators",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": [
+                "discover",
+                // "-v",
+                "tests.annotators.rangeannotators"
+            ],
+        },
+        {
             "name": "tests.models",
             "type": "debugpy",
             "request": "launch",
