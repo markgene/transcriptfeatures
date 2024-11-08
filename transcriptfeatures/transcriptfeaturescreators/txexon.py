@@ -58,9 +58,8 @@ class TxExon:
             raise ValueError(f"cigar {self.cigar} must be a str")
         if self.tx_aseq is not None and not isinstance(self.tx_aseq, str):
             raise ValueError(f"tx_aseq {self.tx_aseq} must be a str or None")
-        if not isinstance(self.alt_aseq, str):
+        if self.alt_aseq is not None and not isinstance(self.alt_aseq, str):
             raise ValueError(f"alt_aseq {self.alt_aseq} must be a str or None")
-
         if not isinstance(self.tx_exon_set_id, int):
             raise ValueError(f"tx_exon_set_id {self.tx_exon_set_id} must be an integer")
         if not isinstance(self.alt_exon_set_id, int):
